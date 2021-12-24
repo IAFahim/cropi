@@ -13,13 +13,14 @@ body {
 
 .grid-container{
     display: grid;
-    grid-template-columns: 28% 72%;
+    grid-template-columns: 28% 70%;
 }
 #left{
     background-color: #2a2a2a;
     overflow-y:auto;
     overflow-x: hidden;
     color: white;
+    margin-right: 2%;
 }
 
 .span-price-sort-wrapper{
