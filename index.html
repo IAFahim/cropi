@@ -10,48 +10,37 @@
 </head>
 <body>
 <header class="navbar-main">
-    <div class="top-ribbon">
-        <img alt="Cropi" src="">
-        <input id="top-product-search-bar" aria-label="Search" autocomplete="off">
-        <div>buy Fake things with Fake money</div>
+    <input id="top-product-search-bar" placeholder="Search Project" aria-label="Search" autocomplete="off">
+    <div class="profile">
+        <img id="profile-picture" alt="Cropi" src="profile.jpg">
+        <div id="profile-name">IA Fahim</div>
     </div>
 </header>
 <div class="grid-container">
     <div id="left">
-        <label for="price-range">
-            <p>Price:</p>
-            <input id="price-range" type="range" min=1 max=100 value=0>
-        </label>
-        <br>
-        <span>Sort By:</span>
-        <span class="span-price-sort-wrapper">
-                <span>Order</span>
-                <span>Newest</span>
-                <span>Price</span>
-            </span>
 
     </div>
     <div id="right">
-        <div class="product">
-            <h3>Duck</h3>
-            <img src="duck.jpg"
-                 alt="duck">
-            <p>10 taka</p>
-            <button>add to cart</button>
-        </div>
-        <div class="product">
-            <h3>Duck</h3>
-            <img src="duck.jpg"
-                 alt="duck">
-            <p>10 taka</p>
-            <button>add to cart</button>
-        </div>
-        <div class="product">
-            <h3>Duck</h3>
-            <img src="duck.jpg"
-                 alt="duck">
-            <p>10 taka</p>
-            <button>add to cart</button>
+        <div class="item-upload">
+            <p>Name:</p>
+            <label for="item-name">
+                <input id="item-name" placeholder="Name of product">
+            </label>
+            <p>Image</p>
+            <input type="file" id="file-select">
+            <br><br>
+            <div id="tag"></div>
+            <label for="description">
+                <textarea id="description" rows="4" cols="50" placeholder="Write description..."></textarea>
+            </label>
+            <br>
+            <br>
+            <label for="price">Price:
+                <input id="price" type="number">
+            </label>
+            <br>
+            <br>
+            <button id="submit-item">submit item</button>
         </div>
 
     </div>
