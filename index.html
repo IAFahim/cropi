@@ -17,15 +17,28 @@
     </div>
 </header>
 <div class="grid-container">
-    <div id="left">
+    <div class="left">
+        <div class="invoice">
+            <h4>invoice</h4>
+            <div class="pickup">
+                <h5>Pickup</h5>
+                <div class="pickup-location-date">
+                    <p>Road 10, Netropara, Tongi, Dhaka</p>
+                    <p>2:30pm</p>
 
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="right">
+    <div class="right">
         <div class="item-upload">
-            <p>Name:</p>
+            <h4>Add new Product</h4>
+            <br>
+            <p>Name</p>
             <label for="item-name">
                 <input id="item-name" placeholder="Name of product">
             </label>
+            <br><br>
             <p>Image</p>
             <input type="file" id="file-select">
             <br><br>
@@ -35,14 +48,38 @@
             </label>
             <br>
             <br>
-            <label for="price">Price:
-                <input id="price" type="number">
+            <label for="price"><p>Price:<input id="price" type="number"></p>
             </label>
             <br>
             <br>
             <button id="submit-item">submit item</button>
         </div>
-
+        <div class="my-products">
+            <div class="product-sold">
+                <h4>Products</h4>
+                <button>view all</button>
+            </div>
+            <div id="product-sold-1">
+                <div class="sold-per">
+                    <p id="product-name-per">Chicken</p>
+                    <p id="product-price-per">+20 ৳</p>
+                </div>
+                <div class="sold-lot">
+                    <p id="product-date-lot">25/12/2021</p>
+                    <p id="product-count-lot">4x</p>
+                    <p id="product-price-lot">+80 ৳</p>
+                </div>
+            </div>
+        </div>
+        <div class="billing">
+            <div>
+                <h4>Billing</h4>
+                <p>108xffr99 Jomuna bank</p>
+                <br>
+                <h4>Store Address</h4>
+                <p>Road 5, House 3, Sector 10, Uttara, Dhaka</p>
+            </div>
+        </div>
     </div>
 </div>
 </body>

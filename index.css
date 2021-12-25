@@ -1,8 +1,56 @@
+:root {
+    --clr-secondary-400: 217 19% 35%;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
 body {
     font-size: 1rem;
     font-family: "ubuntu-regular", sans-serif;
     font-weight: initial;
-    line-height: normal;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    background-color: #f0f2f5;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+blockquote,
+dl,
+input,
+textarea,
+button,
+dd {
+    margin: 0px 0px 0px 10px;
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }
 
 .navbar-main{
@@ -12,6 +60,7 @@ body {
     margin-bottom: 10px;
     gap: 1rem;
 }
+
 .profile{
     display: flex;
     gap: .5rem;
@@ -21,6 +70,7 @@ body {
     border: none;
     font-size: 0.875rem;
     margin-left: 3rem;
+    background-color: #f0f2f5;
 
 }
 
@@ -38,18 +88,55 @@ body {
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 3fr;
+    grid-template-rows: minmax(6rem, auto);
     grid-gap: 8px;
 }
-#left{
+.left{
     overflow-y:auto;
     overflow-x: hidden;
-    color: white;
+    padding-right: 1rem;
+    background-color: white;
+    box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(var(--clr-secondary-400) / 0.25);
 }
 
-#right{
+.pickup{
+  margin-top: .875rem;
 }
 
-.item-upload{
-    margin-right: 10px;
-    margin-top: 30px;
+.right{
+    display: grid;
+    grid-template-columns: auto;
+    border-radius: .5rem;
+    gap: 1rem;
+    width: min(95%, 70rem);
+}
+
+.right > *{
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(var(--clr-secondary-400) / 0.25);
+}
+
+
+.product-sold{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .875rem;
+}
+
+.sold-per{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sold-lot{
+    font-size: .875rem;
+    opacity: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pickup-location-date{
+    display: flex;
+    justify-content: space-between;
 }
