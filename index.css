@@ -28,7 +28,7 @@ input,
 textarea,
 button,
 dd {
-    margin: 0px 0px 0px 10px;
+    margin: 0 0 0 10px;
 }
 
 img,
@@ -50,6 +50,10 @@ picture {
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
+}
+
+.Add-new-product{
+
 }
 
 .navbar-main{
@@ -84,7 +88,7 @@ picture {
     align-items: center;
 }
 
-.grid-container{
+.left-right-grid{
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: minmax(6rem, auto);
@@ -104,12 +108,9 @@ picture {
 
 .right{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
     border-radius: .5rem;
     gap: 1rem;
-    grid-template-areas:
-      "one two"
-      "three two";
 }
 
 .right > *{
@@ -118,9 +119,15 @@ picture {
     box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(var(--clr-secondary-400) / 0.25);
 }
 
+.add-new-product{
+    grid-row: 1/2;
+}
+
 .products{
     grid-row: 1/3;
 }
+
+
 
 .product-sold{
     display: flex;
